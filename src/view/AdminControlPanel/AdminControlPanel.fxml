@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminControlPanel.AdminControlPanel">
+   <children>
+      <Text layoutX="122.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Control Panel">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <ListView fx:id="userListView" layoutX="22.0" layoutY="66.0" prefHeight="321.0" prefWidth="291.0" />
+      <Button fx:id="createUser" layoutX="400.0" layoutY="66.0" mnemonicParsing="false" onAction="#createUser" text="Create User" />
+      <Button fx:id="deleteUser" layoutX="400.0" layoutY="249.0" mnemonicParsing="false" text="Delete User" onAction="#deleteUser" />
+      <Text fx:id="enterUserText" layoutX="428.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <TextField fx:id="enterUserTextField" layoutX="365.0" layoutY="135.0" visible="false" />
+      <Button fx:id="createUserCancel" layoutX="452.0" layoutY="200.0" mnemonicParsing="false" text="Cancel" visible="false" />
+      <Button fx:id="createUserOk" layoutX="374.0" layoutY="200.0" mnemonicParsing="false" text="Ok" visible="false" />
+   </children>
+
+   <fx:include fx:id="logoutQuitButtons" source="../LogoutQuitButtons/LogoutQuitButtons.fxml" AnchorPane.rightAnchor="5" AnchorPane.bottomAnchor="5"/>
+</AnchorPane>

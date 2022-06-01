@@ -1,0 +1,2 @@
+javadoc -d  docs/javadoc/ -sourcepath src/ -subpackages app, model, view.AdminControlPanel, view.AlbumDisplay, view.LoginScreen, view.LogoutQuitButtons, view.PhotosDisplay, view.PhotoView, view.Search --add-modules=javafx.controls,javafx.fxml --module-path=C:\Users\naman\Desktop\SoftwareMethodology\Code\JavaFX\javafx-sdk-17.0.2\lib\
+

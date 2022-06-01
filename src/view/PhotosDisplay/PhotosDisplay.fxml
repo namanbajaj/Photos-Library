@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PhotosDisplay.PhotosDisplayController">
+   <children>
+
+      <Button fx:id="addPhotoButton" layoutX="254.0" layoutY="16.0" mnemonicParsing="false" onAction="#addPhoto" text="Add" />
+      <Button fx:id="deletePhotoButton" layoutX="303.0" layoutY="16.0" mnemonicParsing="false" onAction="#deletePhoto" text="Delete" />
+      <TableView fx:id="photoTable" layoutX="14.0" layoutY="54.0" prefHeight="331.0" prefWidth="325.0">
+         <columns>
+            <TableColumn prefWidth="161.5999755859375" sortable="false" text="Photo" />
+            <TableColumn minWidth="8.79998779296875" prefWidth="163.20001220703125" sortable="false" text="Caption" />
+         </columns>
+      </TableView>
+      <Text layoutX="74.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos Display" wrappingWidth="164.5367431640625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <!-- <Button fx:id="searchPhotoButton" layoutX="190.0" layoutY="15.0" mnemonicParsing="false" onAction="#searchPhoto" text="Search" /> -->
+      <Button fx:id="renamePhotoButton" layoutX="364.0" layoutY="16.0" mnemonicParsing="false" onAction="#renamePhoto" text="Recaption" />
+      <Button fx:id="openPhotoButton" layoutX="537.0" layoutY="17.0" mnemonicParsing="false" onAction="#openPhoto" text="Open" />
+      <TextField fx:id="captionField" alignment="CENTER" editable="false" layoutX="378.0" layoutY="321.0" prefHeight="44.0" prefWidth="187.0" promptText="Caption" />
+      <Button fx:id="okButton" layoutX="404.0" layoutY="266.0" mnemonicParsing="false" text="    OK    " visible="false" />
+      <Button fx:id="cancelButton" layoutX="478.0" layoutY="266.0" mnemonicParsing="false" text="Cancel" visible="false" />
+      <Button fx:id="tagsButton" layoutX="417.0" layoutY="54.0" mnemonicParsing="false" onAction="#openTags" text="Add Tag" />
+      <TextField fx:id="dateField" alignment="CENTER" editable="false" layoutX="378.0" layoutY="269.0" prefHeight="44.0" prefWidth="187.0" promptText="Date of Capture" />
+      <ListView fx:id="tagsListView" layoutX="369.0" layoutY="87.0" prefHeight="171.0" prefWidth="200.0" />
+      <Text fx:id="tagsText" layoutX="361.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" wrappingWidth="50.399999999999864">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="instructionText" layoutX="359.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Photo Location on Disk" visible="false" wrappingWidth="205.33673095703125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inputField" layoutX="359.0" layoutY="197.0" prefHeight="26.0" prefWidth="203.0" visible="false" />
+      <Button fx:id="locationTagButton" layoutX="373.0" layoutY="278.0" mnemonicParsing="false" text="Location" visible="false" />
+      <Button fx:id="personTagButton" layoutX="447.0" layoutY="278.0" mnemonicParsing="false" text="Person" visible="false" />
+      <Button fx:id="customTagButton" layoutX="513.0" layoutY="278.0" mnemonicParsing="false" text="Custom" visible="false" />
+      <Text fx:id="tagInstructionText" layoutX="386.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Predefined Tag or Custom" visible="false" />
+      <Button fx:id="tagCancelButton" layoutX="437.0" layoutY="372.0" mnemonicParsing="false" text="Cancel" visible="false" />
+      <Button fx:id="tagOkButton" layoutX="376.0" layoutY="372.0" mnemonicParsing="false" text="    OK    " visible="false" />
+      <Button fx:id="deleteTagButton" layoutX="492.0" layoutY="54.0" mnemonicParsing="false" onAction="#deleteTag" text="Delete Tag" />
+      <Button fx:id="copyPhotoButton" layoutX="437.0" layoutY="16.0" mnemonicParsing="false" onAction="#copyPhoto" text="Copy" />
+      <Button fx:id="movePhotoButton" layoutX="487.0" layoutY="16.0" mnemonicParsing="false" onAction="#movePhoto" text="Move" />
+      <Button fx:id="backbutton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+
+   <fx:include fx:id="logoutQuitButtons" source="../LogoutQuitButtons/LogoutQuitButtons.fxml" AnchorPane.rightAnchor="5" AnchorPane.bottomAnchor="5"/>
+
+</AnchorPane>
