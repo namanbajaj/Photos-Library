@@ -1,0 +1,9 @@
+app
+model
+view.AdminControlPanel
+view.AlbumDisplay
+view.LoginScreen
+view.LogoutQuitButtons
+view.PhotosDisplay
+view.PhotoView
+view.Search

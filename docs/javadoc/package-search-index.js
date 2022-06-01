@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"app"},{"l":"model"},{"l":"view.AdminControlPanel"},{"l":"view.AlbumDisplay"},{"l":"view.LoginScreen"},{"l":"view.LogoutQuitButtons"},{"l":"view.PhotosDisplay"},{"l":"view.PhotoView"},{"l":"view.Search"}];updateSearchResults();
